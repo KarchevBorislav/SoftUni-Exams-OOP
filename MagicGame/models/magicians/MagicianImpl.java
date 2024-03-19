@@ -77,15 +77,6 @@ public abstract class MagicianImpl implements Magician {
     @Override
     public void takeDamage(int points) {
 
-        //ToDo
-//        if (this.protection - points < 0) {
-//            setProtection(0);
-//            if (this.health - points <= 0) {
-//                isAlive = false;
-//
-//
-//            }
-//        }
         this.protection -= points;
         if (this.protection < 0){
             health += this.protection;
